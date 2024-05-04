@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#hero-section {
+    background-color: rgba(122, 113, 180, 1);
+    height: 475px;
+    width: 100%;
+}
+
+#hero-section .hero-container {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-section .hero-container .hero-content-container {
+    flex-grow: 1;
+}
+
+#hero-section .hero-container .hero-content-container > h1 {
+    display: inline-block;
+    font-size: 4rem;
+    margin-bottom: 5px;
+    color: white;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+      typing 4.5s steps(40, end)
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+#hero-section .hero-container .hero-content-container > p {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.7rem;
+    color: rgb(186, 176, 233);
+}
+
+#hero-section .social-media-badge{
+    display: flex;
+    gap: 1em;
+    width: 15rem;
+    padding: 10px 15px;
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(84, 75, 142);
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+#hero-section .social-media-badge > a {
+    text-decoration: none; color: white;
+}
+
+/*About Section--------------------------------------------*/
+
+#about-section{
+    background-color: rgba(217, 217, 217, 1);
+    width: 100%;
+}
+
+#about-section .about-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5em;
+}
+
+#about-section .about-container .about-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#about-section .about-container .about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 99.7%;
+    line-height: 2rem;
+    background-color: white;
+    padding: 1em;
+    margin: 3em 0 0 0 ;
+}
+
+#about-section .about-container .about-content:hover{
+    box-shadow: 0 0 5px 2px #0000003d;
+}
+
+#about-section .about-container .about-card-content{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+    margin: 3em 0;
+}
+
+#about-section .about-container .about-card-content .about-genere-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em 0;
+    padding: 1em;
+    background-color: white;
+}
+
+#about-section .about-container .about-card-content .about-genere-card:hover{
+    box-shadow: 0 0 5px 2px #0000003d;
+}
+
+#about-section .about-container .about-card-content .about-genere-card > img {
+    height: 300px;
+    aspect-ratio: 1;
+}
+
+#about-section .about-container .about-card-content .about-genere-card .about-genere-card-content > * {
+    margin:0;
+    padding: 0;
+}
+
+/*Feeds Section--------------------------------------------*/
+
+#feeds-section{
+    width: 100%;
+}
+
+#about-section .about-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5em;
+}
+
+#feeds-section .feeds-container .feeds-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+footer{
+    height: 3em;
+    background-color: rgba(122, 113, 180, 1);
+    color: white;
+    padding: 0.5em;
+}
