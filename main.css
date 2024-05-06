@@ -65,6 +65,46 @@ body{
     text-decoration: none; color: white;
 }
 
+@media only screen and (max-width: 600px){
+    #hero-section {
+        height: auto;
+        padding: 1em 0.5em;
+    }
+
+    #hero-section .hero-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero-section .hero-container .hero-image{
+        width: 200px;
+        aspect-ratio: 1;
+    }
+
+    #hero-section .hero-container .hero-content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #hero-section .hero-container .hero-content-container > h1 {
+        font-size: 1.5rem;
+    }
+    
+    #hero-section .hero-container .hero-content-container > p {
+        font-size: 0.6rem;
+        text-align: center;
+        line-height: 1.5rem;
+        padding: 0 1em;
+    }
+
+    #hero-section .social-media-badge{
+        margin: 0.5em;
+    }
+}
+
 /*About Section--------------------------------------------*/
 
 #about-section{
@@ -74,6 +114,8 @@ body{
 
 #about-section .about-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 0 5em;
 }
@@ -133,6 +175,38 @@ body{
     padding: 0;
 }
 
+@media only screen and (max-width: 600px){
+    #about-section .about-container{
+        margin: 0 2em !important;
+    }
+
+    #about-section .about-container .about-content{
+        flex-direction: column;
+        margin: 0 !important;
+    }
+
+    #about-section .about-container .about-content > iframe{
+        width: 100% !important;
+    }
+
+    #about-section .about-container .about-card-content{
+        display: flex;
+        width: 100vw;
+        overflow: hidden;
+        margin: 0;
+        animation: scroll 20s forwards linear infinite;
+    }
+
+    @keyframes scroll {
+        from{
+            transform: translate(50%);
+        }
+        to{
+            transform: translate(-50%);
+        }
+    }
+}
+
 /*Feeds Section--------------------------------------------*/
 
 #feeds-section{
@@ -154,6 +228,7 @@ body{
 
 footer{
     height: 3em;
+    width: auto;
     background-color: rgba(122, 113, 180, 1);
     color: white;
     padding: 0.5em;
